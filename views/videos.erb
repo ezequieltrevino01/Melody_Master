@@ -1,0 +1,14 @@
+<div class="jumbotron text-center">
+  <h1 style="font-size: 60px;">Video Tutorials.</h1>
+  <p style="font-size: 25px; font-style: italic;">Become a Melody Master with the aid of our videos!</p>
+</div>
+
+<hr class="featurette-divider">
+
+<% @videos.each do |v| %>
+	<h1><%= v.title %></h1>
+	<p><%= v.description %></p>
+	<p><%= youtube_embed(v.video_url) %></p>
+<% end %>
+
+<hr class="featurette-divider">

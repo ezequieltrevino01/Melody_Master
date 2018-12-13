@@ -1,0 +1,17 @@
+<div class="jumbotron text-center">
+  <h1 style="font-size: 60px;">Add a video below.</h1>
+</div>
+
+<hr class="featurette-divider">
+
+<div class= "container">
+	<form action="/videos/create" method="POST">
+		Title: <input type="text" name="title"><br/>
+		Description: <input type="text" name="description"><br/>
+		Video URL: <input type="text" name="video_url"><br/>
+		<input type="submit" name="Submit">
+		<input type="checkbox" name="pro">
+	</form>
+</div>
+
+  <hr class="featurette-divider">
